@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<!-- 
+Name: Joseph Oladunmoye
+Student ID: 140554239
+Assignment-Gallery
+Course: WEB 222
+-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <link rel="stylesheet" href="styles.css" >
+    <title>GreenRoom</title>
+
+    <!-- verifies that only values 0 to 999 are acceptable in input tags-->
+    <script>
+      function verifyInput(e) {
+        console.log(
+          `${e.type}: ${e.key}: ${e.which}: ${e.charCode} : ${e.keyCode}`
+        );
+        if (
+          (e.key >= 0 && e.key <= 9) ||
+          e.key == "Backspace" ||
+          e.key == "Delete" ||
+          e.key == "ArrowLeft" ||
+          e.key == "ArrowRight"
+        ) {
+          return true;
+        }
+        return false;
+      }
+    </script>
+  </head>
+  <body class="ordersPage-bg">
+    <!-- <article class="order-container"> -->
+     <article class="orderMainContainer">
+      <!-- BREADCRUMB -->
+       <!-- <h1>Add Items to your order</h1> -->
+           <h4>Clothing, Shoes &amp; Accessories &nbsp;&gt;&nbsp;Orders</h4>
+      <!-- SELECTION GROUP -->
+      <section  class="itemSelection">
+
+       <h6 class="availableNow" >Order Items</h6>
+        <h3 class="boys">Boys</h3>
+        <h3 class="girls">Girls</h3>
+        <h3 class="orderAccessories">Accessories</h3>
+
+        <h6 class="itemTitle">Choose an item:</h6>
+
+        <select class="boys-selection" name="boys-items" id="SelBoysItem">
+          <option>&nbsp;</option>
+          <option value="poloShirt">Classic Polo Dress Shirt</option>
+          <option value="buttonDown">Button-Down School Shirt</option>
+          <option value="shortSleeve">Boys Short Sleeve</option>
+          <option value="CheckeredShirt">Plaid Checkered Shirt Dress</option>
+          <option value="HenleyShirt">Casual Henley Shirt Dress</option>
+          <option value="UtilityShirt">Rugged Utility Shirt Dress</option>
+        </select>
+
+        <!-- SELECT GIRLS ITEMS -->
+        <select class="girls-selection" name="selItem" id="selItem">
+          <option>&nbsp;</option>
+          <option value="girlsSleeve">French Toast girls Sleeve</option>
+          <option value="collarBlouse">Peter Pan Collar Blouse</option>
+          <option value="frontDress">Classic Button-Front Dress</option>
+          <option value="schoolDress">Pleated School Dress</option>
+          <option value="shortSleeve">Floral Print Short-Sleeve</option>
+          <option value="pinaforeDress">Casual Pinafore Dress</option>
+        </select>
+
+        <!-- SELECT ACCESSORIES  -->
+        <select class="accessories-selection" name="accessoriesItem" id="selAccessories">
+          <option>&nbsp;</option>
+          <option value="rainBoots">Durable Waterproof Rain Boots</option>
+          <option value="umbrella">Tactical Utility Umbrella</option>
+          <option value="backpack">Rugged Utility Backpack</option>
+          <option value="hat">Utility-Style Hat</option>
+          <option value="gloves">Weatherproof Gloves</option>
+          <option value="scarf">Multi-Pocket Utility Scarf</option>
+        </select>
+
+      <!--PRICE INPUT -->
+    
+        <h6 class="priceTitle">Price:</h6>
+        <input class="priceInput-1" id="boys-item-price" type="text" maxlength="3" autofocus >
+
+        <input class="priceInput-2" id="girls-item-price" type="text" maxlength="3" >
+
+        <input class="priceInput-3" id="accessories-price" type="text" maxlength="3" >
+
+       <h6 class="createOrder" >Place an Order</h6>
+  <button
+          class="order-button"
+          id="btnOrder"
+          accesskey="r"
+          tabindex="1"
+          title="order now"
+          onclick="window.alert('Thanks for shopping with us')"
+        >
+          O<u>r</u>der Now
+        </button>
+
+        <button
+        style="margin: 0px;"
+          class="order-button"
+          id="btnCancel"
+          accesskey="c"
+          tabindex="2"
+          title="cancel"
+          onclick="window.alert('Please make a new selection')"
+        >
+          Can<u>c</u>el
+        </button>
+        <h6 style="font-size: 10px; font-weight: 400;   
+        text-align: center; justify-items: center; 
+        padding-top: 10px;" 
+        class="guarantee;" >
+        30-Day Money-Back Guarantee <br> Get a full refund within 30
+      days</h6>
+      </section>
+    </article>
+  
+
+    <script>
+      // Select price input field and call verifyInput function
+      document
+        .querySelectorAll(
+          "#boys-item-price, #girls-item-price, #accessories-price"
+        )
+        .forEach((element) => {
+          element.onkeydown = () => {
+            return verifyInput(event);
+          };
+        });
+
+      // Select price input and prevent pasting of values
+      document
+        .querySelectorAll(
+          "#boys-item-price, #girls-item-price, #accessories-price"
+        )
+        .forEach((element) => {
+          element.addEventListener("paste", (event) => {
+            event.preventDefault();
+          });
+        });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,353 @@
+/* Name: Joseph Oladunmoye
+Student ID: 140554239
+Assignment-Gallery
+Course: WEB 222 */
+
+/* General for all items */
+* {
+  font-family: calibri, Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+/* Controls the scroll behaviour */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 70px;
+}
+
+/* Padding at bottom of page to allow room for display of last gallery item */
+body {
+  padding-bottom: 220px;
+}
+
+/* *********** HEADER ********************** */
+header {
+  text-align: center;
+  padding-bottom: 20px;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
+    1px 1px 0 black;
+  letter-spacing: 4px;
+  word-spacing: 12px;
+}
+
+header h1,
+header h2 {
+  font-weight: 400;
+  font: 3pc sans-serif;
+  font-weight: 700;
+  padding-top: 30px;
+  line-height: 50px;
+  color: #ffffff;
+}
+
+.gallery-name {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+/* *********** NAVIGATION ********************** */
+nav {
+  border: 4px solid grey;
+  padding: 20px;
+  border-radius: 15px;
+  position: absolute;
+  right: 50px;
+  /* min-width: 140px; */
+  width: 15%;
+  text-align: right;
+  font-size: 1.3em;
+  line-height: 1.5em;
+}
+
+nav h4 {
+  font-family: "sans-serif";
+  font-size: 1.4pc;
+  margin-bottom: 20px;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
+    1px 1px 0 black;
+  letter-spacing: 3px;
+  color: #ffffff;
+}
+
+nav a {
+  padding: 2px;
+}
+
+/* Navigation pseudo elements */
+nav a:link {
+  color: #000000;
+}
+
+nav a:visited {
+  color: black;
+
+  /* outline: 1px solid #39a7fc; */
+  /* padding: 2px; */
+  /* text-decoration: underline #39a7fc 2px; */
+  border-color: red;
+}
+
+nav a:focus {
+  color: #39a7fc;
+  font-weight: 700;
+  outline: 1px solid #39a7fc;
+}
+
+nav a:hover {
+  color: #39a7fc;
+  text-decoration: underline #39a7fc 2px;
+}
+
+nav a:active {
+  background-color: rgba(255, 255, 255);
+  padding: 2px;
+  color: #39a7fc;
+  border-radius: 5px;
+  outline: 1px solid #39a7fc;
+  text-decoration: none;
+}
+
+/* ***********PRESENTATION CONTAINER ********************** */
+
+/* *********** CONTAINER ********************** */
+#container {
+  min-width: 250px;
+  width: 55%;
+  left: 0;
+  margin: 0 auto;
+  right: 0;
+  border: 4px solid rgba(50%, 50%, 50%, 0.7);
+  border-radius: 15px;
+  background-color: #f5f5f5;
+  box-shadow: 6px 6px 30px rgba(55, 55, 55, 0.6);
+}
+
+/* *********** SECTIONS ********************** */
+
+/* padding for each section */
+section {
+  padding: 20px;
+}
+
+/* Clears the floating image above   */
+/* style scroll arrow size and anchor tag width */
+section a {
+  clear: both;
+  display: block;
+  width: 40px;
+  margin: 0 auto;
+  border-radius: 20%;
+}
+
+/* Left alinged gallery image sections */
+.gallery-img {
+  float: left;
+  min-width: 210px;
+  width: 60%;
+  height: auto;
+  margin-bottom: 50px;
+  border-radius: 15px;
+  margin-right: 20px;
+}
+
+/* Right aligned gallery image sections */
+.gallery-img-right {
+  float: right;
+  min-width: 210px;
+  width: 60%;
+  height: auto;
+  margin-bottom: 50px;
+  border-radius: 15px;
+  margin-left: 20px;
+}
+
+/* Image description container */
+.content {
+  overflow: hidden;
+  font: 16px "Futura";
+  line-height: 24px;
+}
+
+/* Description text */
+.art-description-right {
+  /* clear: both; */
+  overflow: hidden;
+  line-height: 24px;
+}
+
+/* Style for text targetting the first span tag */
+.artist-name {
+  text-align: center;
+  font: 1.2em "Courier";
+}
+
+/* STyling for hr at artists name */
+hr.artistNameHR {
+  border-width: 0;
+  height: 2px;
+  background-color: transparent;
+  background-image: linear-gradient(
+    90deg,
+    rgba(255, 0, 0, 1),
+    rgba(255, 255, 0, 1),
+    rgba(0, 0, 255, 1)
+  );
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+/* Style for 3 span element */
+.content span:nth-child(3) {
+  /* text-align: center; */
+  display: block;
+}
+
+/* Image styles */
+.img_arrow {
+  width: 40px;
+  margin: 0 auto;
+}
+
+.img_arrow_2 {
+  display: block;
+  width: 40px;
+}
+
+hr.headerHR {
+  bottom: 0;
+  left: 0;
+  height: 20px;
+  margin-bottom: 40px;
+  border-width: 0;
+  background-color: grey;
+}
+
+hr.sectionHR {
+  height: 4px;
+  width: 100%;
+  background-color: grey;
+  margin-bottom: 40px;
+  border-width: 0;
+}
+
+.item_price {
+  display: block;
+  font: 1.2em sans-serif;
+  margin-bottom: 1em;
+}
+
+/* CONTACT SECTION */
+.contact {
+  text-align: right;
+  padding-right: 10px;
+  padding-top: 10px;
+}
+
+/* Contact span elements */
+.contact_span {
+  display: block;
+  padding: 2px;
+}
+
+/* Contact pseudo elements */
+.contact_span a:link {
+  color: inherit;
+}
+
+.contact_span a:visited {
+  color: inherit;
+}
+
+.contact_span a:focus {
+  font-weight: 700;
+  outline: none;
+  border: 1px solid #39a7fc;
+}
+
+.contact_span a:hover {
+  color: #39a7fc;
+  border-bottom: 1px solid;
+}
+
+.contact_span a:active {
+  background-color: rgba(255, 255, 255);
+  border: 1px solid #39a7fc;
+  padding: 2px;
+  color: #39a7fc;
+  border-radius: 5px;
+}
+
+/* Contact text */
+article h5 {
+  text-align: right;
+  margin-right: 20px;
+  font: 700 20px "Calibri";
+  margin-bottom: 30px;
+  line-height: 1.2em;
+}
+
+/* *********** USER REVIEWS - STARS ********************** */
+.user-reviews {
+  list-style: none;
+}
+
+.user-reviews li {
+  display: inline-block;
+}
+
+.user-reviews img {
+  width: 20px;
+}
+
+/* Centres user reviews text */
+.user-reviews li:last-child {
+  position: relative;
+  top: -3px;
+  margin-left: 10px;
+}
+
+/* *********** LAST UP ARROW ********************** */
+.last-arrow {
+  display: block;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+/* Section and last-arrow pseudo elements  */
+.last-arrow a {
+  display: inline-block;
+  border-radius: 20%;
+}
+
+.last-arrow a:link,
+section a:link {
+  color: #000000;
+}
+
+.last-arrow a:visited,
+section a:visited {
+  color: inherit;
+}
+
+.last-arrow a:focus,
+section a:focus {
+  color: #39a7fc;
+  outline: 2px solid #39a7fc;
+  filter: invert(10%);
+}
+.last-arrow a:hover,
+section a:hover {
+  background-color: #39a7fc;
+}
+
+.last-arrow a:active {
+  background-color: #39a7fc;
+}
+.last-arrow a:hover img,
+section a:hover img {
+  filter: invert(100%);
+}
