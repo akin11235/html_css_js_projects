@@ -32,8 +32,8 @@ jobs:
             const coredemo = require('@actions/core')
             return await coredemo.getIDToken()
           result-encoding: string
-      - name: Build And Deploy - Kids Fashion Store
-        id: builddeploy_kids_fashion
+      - name: Build And Deploy
+        id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_JOLLY_HILL_0D348290F }}
@@ -41,20 +41,6 @@ jobs:
           ###### Repository/Build Configurations - These values can be configured to match your app requirements. ######
           # For more information regarding Static Web App workflow configurations, please visit: https://aka.ms/swaworkflowconfig
           app_location: "./kids-fashion-store" # App source code path
-          api_location: "" # Api source code path - optional
-          output_location: "./src" # Built app content directory - optional
-          github_id_token: ${{ steps.idtoken.outputs.result }}
-          ###### End of Repository/Build Configurations ######
-
-      - name: Build And Deploy - Virtual Gallery
-        id: builddeploy_virtual_gallery
-        uses: Azure/static-web-apps-deploy@v1
-        with:
-          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_JOLLY_HILL_0D348290F }}
-          action: "upload"
-          ###### Repository/Build Configurations - These values can be configured to match your app requirements. ######
-          # For more information regarding Static Web App workflow configurations, please visit: https://aka.ms/swaworkflowconfig
-          app_location: "./virtual-gallery" # App source code path
           api_location: "" # Api source code path - optional
           output_location: "./src" # Built app content directory - optional
           github_id_token: ${{ steps.idtoken.outputs.result }}
