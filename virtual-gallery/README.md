@@ -1,6 +1,6 @@
 ### Virtual Gallery
 
-[Visit Website](https://virtualgallery.z9.web.core.windows.net/)
+[Live Website](https://virtualgallery.z9.web.core.windows.net/)
 
 ## Project Overview
 
