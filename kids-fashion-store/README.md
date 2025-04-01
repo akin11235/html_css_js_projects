@@ -1,12 +1,12 @@
-### The Green Room
+## The Green Room
 
 [Live Website](https://jolly-hill-0d348290f.6.azurestaticapps.net/)
 
-## Project Overview
+### Project Overview
 
 The Green room is a visually engaging static website designed to provide an interactive and seamless browsing experience. The website is hosted on Azure Static Web Apps, ensuring fast load times and reliable performance.
 
-Key Features
+#### Key Features
 
 🌐 Static Web Hosting: Deployed on Azure Static Web Apps for high availability.
 

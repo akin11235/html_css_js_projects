@@ -1,12 +1,12 @@
-### Virtual Gallery
+## Virtual Gallery
 
 [Live Website](https://virtualgallery.z9.web.core.windows.net/)
 
-## Project Overview
+### Project Overview
 
 The Virtual Gallery is an immersive web-based platform designed to showcase digital artwork in a visually engaging manner. The gallery provides users with a seamless browsing experience, allowing them to explore curated collections of artwork in a virtual environment.
 
-Key Features
+#### Key Features
 
 🖼 Digital Artwork Display: View a collection of curated digital art pieces.
 
