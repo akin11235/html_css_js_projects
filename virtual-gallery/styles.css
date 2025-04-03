@@ -351,3 +351,71 @@ section a:hover {
 section a:hover img {
   filter: invert(100%);
 }
+
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center;
+  }
+
+  nav {
+    position: static; /* Removes absolute positioning */
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    /* padding: 10px; */
+  }
+
+  nav {
+    position: static; /* Ensures nav stays in normal flow */
+    width: 50%;
+    text-align: center;
+    padding: 10px;
+    /* visibility: hidden; */
+    /* opacity: 0; */
+    transition: opacity 0.3s ease-in-out;
+    margin: 0 auto;
+    border: none;
+  }
+
+  nav.show {
+    /* visibility: visible; */
+    /* opacity: 1; */
+  }
+
+  .gallery-item {
+    width: 100%; /* Full width for better visibility */
+    margin-bottom: 20px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .menu-toggle {
+    display: block; /* Show hamburger menu */
+  }
+
+  header {
+    text-align: center;
+    width: 200px;
+    margin: 0 auto;
+  }
+
+  header h1,
+  header h2 {
+    font-size: 20px; /* Corrected font size */
+    /* font-weight: 700; */
+    color: #ffffff;
+  }
+
+  h5 {
+    font-size: 10px;
+  }
+}
