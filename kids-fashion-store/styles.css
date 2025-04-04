@@ -105,7 +105,6 @@ nav {
   top: 240px;
   color: #ffffff;
   cursor: pointer;
-  
 }
 
 /* Nav ul */
@@ -121,40 +120,40 @@ nav ul li {
   padding: 15px;
   text-align: center;
   border-bottom: 1px solid #555;
-  color: #FFFFFF;
-/* background color to be transitioned */
-  transition: background-color 0.5s ease-in-out; 
+  color: #ffffff;
+  /* background color to be transitioned */
+  transition: background-color 0.5s ease-in-out;
 }
 
- /* Change to lighter background color on hover */
+/* Change to lighter background color on hover */
 nav ul li:hover {
   background-color: #555555;
 }
 
-
 /*  Anchor tag styling whTransition applied to anchor tags*/
 .tagTransition {
-  color: #FFFFFF;
+  color: #ffffff;
   text-decoration: none;
   display: inline-block;
   font-size: 18px;
   font-weight: 400;
-  position: relative; 
-  transition: color 0.5s ease-in-out, background-color 0.5s ease-in-out, outline 0.5s ease-in-out;
+  position: relative;
+  transition: color 0.5s ease-in-out, background-color 0.5s ease-in-out,
+    outline 0.5s ease-in-out;
 }
 
 /* font color to be changed with the transition on hover*/
 nav ul li:hover .tagTransition {
- color: #ffce12;
+  color: #ffce12;
 }
 
 /* Navigation pseudo elements */
 nav a:link {
-   color: #FFFFFF;
+  color: #ffffff;
 }
 
 nav a:visited {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 nav a:focus {
@@ -164,8 +163,8 @@ nav a:focus {
   padding-right: 5px;
   outline: 1px solid #ffce12;
   border-radius: 5px;
-  transition: color 0.2s ease-in-out, outline 0.2s ease-in-out, padding 0.2s ease-in-out;
-
+  transition: color 0.2s ease-in-out, outline 0.2s ease-in-out,
+    padding 0.2s ease-in-out;
 }
 
 nav a:hover {
@@ -179,7 +178,8 @@ nav a:active {
   border-radius: 5px;
   outline: 1px solid #ffce12;
   text-decoration: none;
-  transition: color 0.2s ease-in-out, outline 0.5s ease-in-out, padding 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out, outline 0.5s ease-in-out,
+    padding 0.2s ease-in-out;
 }
 
 /****************************************************  HOME PAGE */
@@ -429,31 +429,30 @@ h4 {
 }
 
 /***************************************************** ORDERS PAGE */
-    
+
 .ordersPage-bg {
   /* margin-top: 130px; */
   /* height: 500px; */
   background-color: #fcfcf9;
   margin: 160px auto;
-   width: 100%;
+  width: 100%;
   overflow: hidden;
 }
 
 /* Top level article element - 3 columns */
 .orderMainContainer {
   display: grid;
-   grid-template-columns: 100px auto;
+  grid-template-columns: 100px auto;
 
   column-gap: 30px;
   background-color: #e8e8e8;
   padding: 20px;
   border-radius: 10px;
   text-align: right;
-  margin: 0 auto ;
+  margin: 0 auto;
   width: 600px;
   /* max-width: 90%; */
   height: auto;
-
 }
 
 /* .itemCategory {
@@ -468,61 +467,59 @@ h4 {
 
 .itemCategory {
   display: grid;
-   grid-template-areas: 
-   "availableNow"
-   "boys"
-   "girls"
-   "orderAccessories";
+  grid-template-areas:
+    "availableNow"
+    "boys"
+    "girls"
+    "orderAccessories";
   color: #233800;
-   align-items: center; 
-   background-color: #f3f3efcc; 
-   border-radius: 10px;
+  align-items: center;
+  background-color: #f3f3efcc;
+  border-radius: 10px;
   padding: 20px;
   grid-gap: 10px;
-  
 }
 
-.itemCategory h6{
-    text-align: right;  
+.itemCategory h6 {
+  text-align: right;
 }
 
-.availableNow{
+.availableNow {
   grid-area: availableNow;
   font-size: 14px;
   text-align: right;
 }
 
-.boys{
+.boys {
   grid-area: boys;
   color: #060705;
   font-size: 16px;
   line-height: 40px;
 }
 
-.girls{
+.girls {
   grid-area: girls;
   color: #060705;
   font-size: 16px;
   line-height: 40px;
 }
 
-.orderAccessories{
+.orderAccessories {
   grid-area: orderAccessories;
   color: #060705;
   font-size: 16px;
-   
 }
 
 .itemSelection {
   display: grid;
-  grid-template-columns:100px 150px 120px 150px;
- grid-template-rows: 20px 50px 50px 50px;
+  grid-template-columns: 100px 150px 120px 150px;
+  grid-template-rows: 20px 50px 50px 50px;
 
-   grid-template-areas: 
-   "availableNow itemTitle priceTitle createOrder"
-   "boys boys-selection priceInput-1 order-button"
-   "girls girls-selection priceInput-2 order-button"
-   "orderAccessories accessories-selection priceInput-3 guarantee";
+  grid-template-areas:
+    "availableNow itemTitle priceTitle createOrder"
+    "boys boys-selection priceInput-1 order-button"
+    "girls girls-selection priceInput-2 order-button"
+    "orderAccessories accessories-selection priceInput-3 guarantee";
   border-radius: 10px;
   padding: 20px;
   grid-gap: 10px;
@@ -530,51 +527,50 @@ h4 {
   padding: 0;
 }
 
-.createOrder{
-    grid-area: createOrder;
+.createOrder {
+  grid-area: createOrder;
 }
 
-.guarantee{
-    grid-area: guarantee;
+.guarantee {
+  grid-area: guarantee;
 }
 
-.itemTitle{
-    grid-area: itemTitle;
-    margin: 0;
-    padding: 0;
+.itemTitle {
+  grid-area: itemTitle;
+  margin: 0;
+  padding: 0;
 }
 
-.boys-selection{
-    grid-area: boys-selection;
+.boys-selection {
+  grid-area: boys-selection;
 }
 
-.girls-selection{
-    grid-area: girls-selection;
+.girls-selection {
+  grid-area: girls-selection;
 }
 
-.accessories-selection{
-        grid-area: accessories-selection;
+.accessories-selection {
+  grid-area: accessories-selection;
 }
 
 /* Column 2 of grid-template areas */
-.priceTitle{
-    grid-area: priceTitle;
+.priceTitle {
+  grid-area: priceTitle;
 }
-.priceInput-1{
-    grid-area: priceInput-1;
-}
-
-.priceInput-2{
-    grid-area: priceInput-2;
+.priceInput-1 {
+  grid-area: priceInput-1;
 }
 
-.priceInput-3{
-    grid-area: priceInput-3;
+.priceInput-2 {
+  grid-area: priceInput-2;
+}
+
+.priceInput-3 {
+  grid-area: priceInput-3;
 }
 
 /* INPUT GROUP */
 .order-button {
-
   border-radius: 10px;
   height: 40px;
   font-size: 16px;
@@ -586,12 +582,11 @@ h4 {
   margin: 0;
 }
 
-h6{
-    margin: 0;
-    font-size: 14px;
-    text-align: center;
+h6 {
+  margin: 0;
+  font-size: 14px;
+  text-align: center;
 }
-
 
 /* ************INPUT AND SELECT******************************* */
 input[type="text"] {
@@ -600,7 +595,6 @@ input[type="text"] {
   /* border-radius: 5px; */
   border: 1px solid rgb(128, 128, 128);
   background-color: rgb(255, 255, 255);
-  
 }
 
 input[type="text"]:invalid {
@@ -611,4 +605,79 @@ select {
   /* border-radius: 5px; */
 
   background-color: rgb(255, 255, 255);
+}
+
+@media only screen and (max-width: 960px) {
+  body {
+    /* margin: 0 auto; */
+  }
+
+  .mainTitle {
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
+      1px 1px 0 black;
+    letter-spacing: 4px;
+    /* word-spacing: 12px; */
+  }
+
+  .mainTitle h1 {
+    font: 50px sans-serif;
+    font-weight: 700;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #ffffff;
+    /* line-height: 55px; */
+  }
+
+  .mainTitle h2 span:last-child {
+    background-color: rgb(238, 75, 75, 0.9);
+    border: 1px solid #444444;
+    padding: 4px;
+    border-radius: 5px;
+    padding-left: 10px;
+    font-size: 1.2em;
+    line-height: 50px;
+    white-space: nowrap;
+  }
+
+  nav {
+    width: 100%;
+    position: static;
+    margin: 0 auto;
+    right: 30px;
+    top: 240px;
+    color: #ffffff;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+
+  /* Nav ul */
+  nav ul {
+    display: flex;
+    justify-content: center; /* Centers the <li> elements horizontally */
+    align-items: center;
+    background-color: #444444;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  nav .menu-label {
+    display: none;
+  }
+
+  iframe {
+    display: block;
+    margin: 0 auto;
+    max-width: 50%;
+  }
+
+  hr.headerHR {
+    height: 0; /* removes the visual height */
+    margin-bottom: 0;
+    background-color: transparent; /* or set to match the background */
+    border-width: 0; /* keeps it borderless */
+    display: none; /* optional: fully removes it from layout */
+  }
 }
