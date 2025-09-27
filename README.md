@@ -2,7 +2,7 @@ This repository contains exciting web projects in HTML, CSS and JavaScript
 
 ## Virtual Gallery
 
-[Live Website]([http://virtualgallery.z9.web.core.windows.net/])
+[Live Website]([https://virtualgallery.z9.web.core.windows.net/])
 
 The Virtual Gallery is a dynamic, immersive platform designed to showcase digital artwork in an interactive, visually appealing environment. Users can explore curated collections of digital art in a smooth, responsive, and modern interface optimized for various devices.
 
